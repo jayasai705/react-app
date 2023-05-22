@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <title>Converting string to an array in JavaScript</title>
+<head>
+   <script>
+      var string = "We are Tutorials point";
+      const arr1 = string.split(' ');
+      const arr2 = string.split('');
+      const arr3 = string.split(" ", 2);
+      if (arr1[arr1.length-1] == ""){
+        document.write("hello");
+      }
+    //   document.write(arr1, "<br>", arr2, "<br>", arr3, "<br>");
+    //   let [first, second, third, fourth] = string.split(' ');
+    //   document.write(first, second, third, fourth);
+
+      let Text  = "jaya sai krishna  ";
+      if (Text.split(' ')[Text.length-1] == undefined){
+        document.write(Text.split(" ").length)
+      }
+      else{
+        document.write(Text.split(" ").length-1)
+      }
+    //   <p>
+    //     There are {Text.split(' ')[Text.length-1] == undefined?Text.split(" ").length:Text.split(" ").length-1} no. of words, and {Text.length} no. of characters
+    //   </p>
+   </script>
+</head>
+<body>
+</body>
+</html>
